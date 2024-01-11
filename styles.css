@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cyan;
+  padding: 10px;
+}
+
+.main-icon {
+  color: black;
+  text-decoration: none;
+}
+
+.hamburguesa {
+  width: 20px;
+}
+
+nav {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden-ul {
+  display: none;
+}
+
+.show-ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: cyan;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hamburguesa {
+    display: none;
+  }
+}
